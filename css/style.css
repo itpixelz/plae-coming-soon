@@ -42,11 +42,11 @@ html, body {
 
 .loader-icon {
 	top: 50%;
-    left: 50%;
-    right: 0;
-    position: absolute;
-    margin: -50px 0 0 -50px;
-    bottom: 0;
+	left: 50%;
+	right: 0;
+	position: absolute;
+	margin: -50px 0 0 -50px;
+	bottom: 0;
 }
 
 .backstretch:after {
@@ -89,7 +89,7 @@ html, body {
 	border-radius: 50%;
 	height: 30px;
 	line-height: 28px;
-    text-decoration: none!important;
+	text-decoration: none!important;
 	font-size: 12px;
 	-webkit-transition: all 0.3s ease-in-out !important;
 	-moz-transition: all 0.3s ease-in-out !important;
@@ -123,20 +123,20 @@ html, body {
 header {
 	text-align:center;
 	height: 100%;
-	}
+}
 
 header h1 {
-	font-size: 2.5em;
 	color:#fff;
 	font-weight: 300;
 	letter-spacing: 1px;
 	padding-top:10px;
 	padding-bottom:10px;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-size: 5em;
 }
 
 header p {
-    font-size: 14px;
+	font-size: 14px;
 	color: rgba(236,240,241,0.9);
 	word-spacing: 1px;
 	line-height: 25px;
@@ -151,49 +151,49 @@ header .coming-soon {
 }
 
 header .mouse {
-  margin-left: -20px;
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  left: 50%;
-      animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
-  -webkit-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
-  -moz-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
-  -o-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+	margin-left: -20px;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 50%;
+	animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+	-webkit-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+	-moz-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+	-o-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
 }
 
 header .mouse a {
-  color: #F9F9F9;
-  position: relative;
-  bottom: 20px;
-  line-height: 45px;
-  font-size: 9px;
-  text-align: center;
-  width: 22px;
-  height: 36px;
-  border-radius: 10px;
-  display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+	color: #F9F9F9;
+	position: relative;
+	bottom: 20px;
+	line-height: 45px;
+	font-size: 9px;
+	text-align: center;
+	width: 22px;
+	height: 36px;
+	border-radius: 10px;
+	display: inline-block;
+	border: 2px solid rgba(255, 255, 255, 0.6);
 
 }
 
 
 
 @keyframes wobbleArrow {
-    from {
-        bottom: 40px;
-    }
-    to {
-        bottom: 50px;
-    }
+	from {
+		bottom: 40px;
+	}
+	to {
+		bottom: 50px;
+	}
 }
 @-webkit-keyframes wobbleArrow {
-    from {
-        bottom: 40px;
-    }
-    to {
-        bottom: 50px;
-    }
+	from {
+		bottom: 40px;
+	}
+	to {
+		bottom: 50px;
+	}
 }
 
 
@@ -202,24 +202,24 @@ header .mouse a {
 /* ================================= */
 
 .countdown {
-    font-size: 4em;
-    margin: 0 auto;
-    font-family: 'Iceberg', sans-serif;
-    line-height: 65px;
-    display: inline-block;
-    color: #fff;
+	font-size: 4em;
+	margin: 0 auto;
+	font-family: 'Iceberg', sans-serif;
+	line-height: 65px;
+	display: inline-block;
+	color: #fff;
 }
 
 .countdown div span {
 	display:block;
-    font-size: 16px;
-    line-height: 19px;
+	font-size: 16px;
+	line-height: 19px;
 
 }
 
 .countdown div {
 	display:inline-block;
-    margin: 0 34px;
+	margin: 0 34px;
 }
 
 
@@ -286,7 +286,7 @@ header .mouse a {
 	font-weight:600;
 	font-size: 15px;
 	text-align:center;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 	word-wrap: break-word;
 	text-transform: uppercase;
 	font-family: "iceberg", sans-serif;
@@ -294,10 +294,10 @@ header .mouse a {
 
 .services h2:after {
 	content: " ";
-    border: solid 2px #16b6ea;
-    display: block;
-    width: 35px;
-    margin: 20px auto;
+	border: solid 2px #16b6ea;
+	display: block;
+	width: 35px;
+	margin: 20px auto;
 }
 
 .services p {
@@ -320,9 +320,9 @@ header .mouse a {
 	background: url('../images/keyboard-bg.jpg')  no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	 -o-background-size: cover;
-	 background-size: cover;
-	 background-attachment: fixed;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
 
 }
 
@@ -397,7 +397,7 @@ header .mouse a {
 }
 
 .subscribe label.error i {
-    color: #16b6ea;
+	color: #16b6ea;
 }
 
 .subscribe label i.fa.fa-check {
@@ -412,6 +412,7 @@ header .mouse a {
 	background-color: #f3f5f8;
 	padding: 130px 0 110px;
 	z-index: 10;
+	height: 100vh;
 }
 
 .contact h2 {
@@ -431,14 +432,14 @@ header .mouse a {
 	background: transparent;
 	border-bottom: 2px solid #ddd;
 	border-top: none;
-    border-left: none;
-    border-right: none;
+	border-left: none;
+	border-right: none;
 	height: 54px;
 	font-size: 13px;
 	outline: none;
-    -webkit-transition: all 0.3s!important;
-    -moz-transition: all 0.3s!important;
-    transition: all 0.3s!important;
+	-webkit-transition: all 0.3s!important;
+	-moz-transition: all 0.3s!important;
+	transition: all 0.3s!important;
 }
 
 .contact input[type='email'] {
@@ -450,8 +451,8 @@ header .mouse a {
 .contact input[type='text'], .contact input[type='email']:focus {
 	border-bottom: 2px solid #bbb;
 	border-top: none;
-    border-left: none;
-    border-right: none;
+	border-left: none;
+	border-right: none;
 }
 
 .contact input[type='text'] {
@@ -465,20 +466,20 @@ header .mouse a {
 	font-size: 13px;
 	border-bottom: 2px solid #ddd;
 	border-top: none;
-    border-left: none;
-    border-right: none;
+	border-left: none;
+	border-right: none;
 	outline: none;
 	margin: 20px 0;
-    -webkit-transition: all 0.3s!important;
-    -moz-transition: all 0.3s!important;
-    transition: all 0.3s!important;
+	-webkit-transition: all 0.3s!important;
+	-moz-transition: all 0.3s!important;
+	transition: all 0.3s!important;
 }
 
 .contact textarea:focus {
 	border-bottom: 2px solid #bbb;
 	border-top: none;
-    border-left: none;
-    border-right: none;
+	border-left: none;
+	border-right: none;
 }
 
 .contact input[type='submit'] {
@@ -495,11 +496,11 @@ header .mouse a {
 	margin-top:20px;
 	font-weight: 700;
 	height: 54px;
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
-    transition: all 0.3s ease-in-out !important;
+	-webkit-transition: all 0.3s ease-in-out !important;
+	-moz-transition: all 0.3s ease-in-out !important;
+	-ms-transition: all 0.3s ease-in-out !important;
+	-o-transition: all 0.3s ease-in-out !important;
+	transition: all 0.3s ease-in-out !important;
 }
 
 .contact input[type="submit"]:hover {
@@ -508,28 +509,28 @@ header .mouse a {
 }
 
 .contact .error .email {
-    text-align: right;
-    display: inline-block;
-    position: absolute;
-    right: 19px;
-    padding-left: 9px;
+	text-align: right;
+	display: inline-block;
+	position: absolute;
+	right: 19px;
+	padding-left: 9px;
 }
 
 .contact .error .name {
-    display: inline-block;
-    position: absolute;
-    left: 43.7%;
-    padding-left: 2px;
+	display: inline-block;
+	position: absolute;
+	left: 43.7%;
+	padding-left: 2px;
 }
 
 .contact .error .message {
-    text-align: right;
-    display: inline-block;
-    position: absolute;
-    right:0;
-    bottom: 115px;
-    margin-right: 20px;
-    padding-left: 9px;
+	text-align: right;
+	display: inline-block;
+	position: absolute;
+	right:0;
+	bottom: 115px;
+	margin-right: 20px;
+	padding-left: 9px;
 }
 
 .contact #ajax-contact-form i {
@@ -537,20 +538,20 @@ header .mouse a {
 }
 
 .contact .notification_ok {
-  text-align: center;
-  color: #3d4a6e;
-  font-weight: 500;
-  margin-bottom: 10px;
-  font-size: 14px;
-  position: absolute;
-  top: -36px;
-  width: 96%;
-  margin-top:5px;
+	text-align: center;
+	color: #3d4a6e;
+	font-weight: 500;
+	margin-bottom: 10px;
+	font-size: 14px;
+	position: absolute;
+	top: -36px;
+	width: 96%;
+	margin-top:5px;
 }
 
 .contact .notification_ok i {
 	color: #16b6ea;
-    padding-right: 5px;
+	padding-right: 5px;
 }
 
 
@@ -560,86 +561,86 @@ header .mouse a {
 /* ================================= */
 
 #google-container {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  background-color: #e7eaf0;
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background-color: #e7eaf0;
 }
 
 .google-map {
-  position: relative;
+	position: relative;
 }
 
 #zoom-in, #zoom-out {
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
-  margin-left: 40px;
-  background-color: rgba(22, 182, 234, 0.9);
-  background-repeat: no-repeat;
-  background-size: 32px 64px;
-  background-image: url("../images/icon-controller.svg");
-    transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	margin-left: 40px;
+	background-color: rgba(22, 182, 234, 0.9);
+	background-repeat: no-repeat;
+	background-size: 32px 64px;
+	background-image: url("../images/icon-controller.svg");
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
 #zoom-in:hover, #zoom-out:hover {
-  background-color: #16b6ea;
+	background-color: #16b6ea;
 
 }
 
 #zoom-in {
-  background-position: 50% 0;
-  margin-top: 100px;
-  margin-bottom: 1px;
+	background-position: 50% 0;
+	margin-top: 100px;
+	margin-bottom: 1px;
 }
 
 #zoom-out {
-  background-position: 50% -32px;
+	background-position: 50% -32px;
 }
 
 .google-map .contact-info {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(243, 245, 248, 0.85);
-  color: #242830;
-  margin-bottom: 0;
-  height: 54px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(243, 245, 248, 0.85);
+	color: #242830;
+	margin-bottom: 0;
+	height: 54px;
 }
 
 .google-map address .fa-map-marker, .phone i, .email i  {
-  padding-right:10px;
+	padding-right:10px;
 
 }
 
 .google-map address {
-  margin-bottom:0;
-  font-size: 13px;
-  position: relative;
-  top: 15px;
-  font-weight: 700;
-  margin-top: 4px;
-  padding-left:5px;
+	margin-bottom:0;
+	font-size: 13px;
+	position: relative;
+	top: 15px;
+	font-weight: 700;
+	margin-top: 4px;
+	padding-left:5px;
 }
 
 .google-map .phone {
-  font-size: 13px;
-  text-align:center;
-  position: relative;
-  top: -3px;
-  font-weight: 700;
+	font-size: 13px;
+	text-align:center;
+	position: relative;
+	top: -3px;
+	font-weight: 700;
 }
 
 .google-map .email {
-  font-size: 13px;
-  text-align:right;
-  position: relative;
-  top: -22px;
-  font-weight: 700;
+	font-size: 13px;
+	text-align:right;
+	position: relative;
+	top: -22px;
+	font-weight: 700;
 }
 
 
@@ -732,156 +733,179 @@ footer a:hover {
 /* ================================= */
 
 @media only screen and (max-width: 1036px) {
-    .services .col-md-4 {
-        margin-bottom: 40px;
-    }
-    .subscribe button {
-        width: 10%;
-    }
-    .contact input[type="submit"] {
-        width: 20%;
-    }
-    .contact .error .name {
-        left: 43.0%;
-    }
+	.services .col-md-4 {
+		margin-bottom: 40px;
+	}
+	.subscribe button {
+		width: 10%;
+	}
+	.contact input[type="submit"] {
+		width: 20%;
+	}
+	.contact .error .name {
+		left: 43.0%;
+	}
 }
 @media only screen and (max-width: 756px) {
-    .subscribe input[type="email"] {
-        margin-bottom: 10px;
-    }
-    .subscribe button,
-    .subscribe input[type="email"] {
-        width: 25%;
-    }
-    .contact-info {
-        padding-top: 40px;
-        height: 100px!important;
-    }
-    .google-map .phone,
-    .google-map .email {
-        position: absolute;
-    }
-    .contact input[type="submit"] {
-        width: 30%;
-    }
-    .google-map i.fa-map-marker {
-        margin-left: -5px;
-    }
-    .contact .error .name {
-        left: 42.5%;
-    }
-    header p {
-        font-size: 14px;
-        text-align: left;
-        margin-left: 10px;
-    }
-    header h1 {
-        font-size: 25px;
-        padding-top: 1px;
-        margin-bottom: 0px;
-        text-align: left;
-    }
-    header .countdown {
-        font-size: 2.1em;
-        line-height: 50px;
-        margin-top: -20px;
-    }
-    header .countdown span {
-        line-height: 5px;
-    }
-    header .logo img {
-        width: 15%;
-        height: auto;
-        float: left;
-        margin: 10px;
+	.subscribe input[type="email"] {
+		margin-bottom: 10px;
+	}
+	.subscribe button,
+	.subscribe input[type="email"] {
+		width: 25%;
+	}
+	.contact-info {
+		padding-top: 40px;
+		height: 100px!important;
+	}
+	.google-map .phone,
+	.google-map .email {
+		position: absolute;
+	}
+	.contact input[type="submit"] {
+		width: 30%;
+	}
+	.google-map i.fa-map-marker {
+		margin-left: -5px;
+	}
+	.contact .error .name {
+		left: 42.5%;
+	}
+	header p {
+		font-size: 14px;
+		text-align: left;
+		margin-left: 10px;
+	}
+	header h1 {
+		font-size: 25px;
+		padding-top: 1px;
+		margin-bottom: 0px;
+		text-align: left;
+	}
+	header .countdown {
+		font-size: 2.1em;
+		line-height: 50px;
+		margin-top: -20px;
+	}
+	header .countdown span {
+		line-height: 5px;
+	}
+	header .logo img {
+		height: auto;
+		float: none;
+		margin: 0px;
 		padding: 20px;
-    }
+	}
 
-    .mouse {
-        display: none!important;
-    }
-    .services {
-        padding-top: 180px;
-    }
-    header .welcome {
-        padding-top: 10px;
-    }
+	.mouse {
+		display: none!important;
+	}
+	.services {
+		padding-top: 180px;
+	}
+	header .welcome {
+		padding-top: 10px;
+	}
 
-    #google-container {
-        height: 320px;
-    }
+	#google-container {
+		height: 320px;
+	}
 
-    #zoom-in {
-        margin-top: 120px;
-    }
+	#zoom-in {
+		margin-top: 120px;
+	}
 
-    #zoom-in, #zoom-out {
-        margin-left: 20px;
-    }
+	#zoom-in, #zoom-out {
+		margin-left: 20px;
+	}
 
-   .welcome .logo {
-        width: auto!important;
-    }
-    header {
-    padding-top: 15px;
-}
+	.welcome .logo {
+		width: auto!important;
+	}
+	header {
+		padding-top: 15px;
+	}
 }
 @media only screen and (max-width: 540px) {
-    .contact input[type="submit"] {
-        width: 40%;
-    }
-    .contact .error .name {
-        left: 41.2%;
-    }
-    header p {
-        font-size: 14px;
-    }
-    header h1 {
-        font-size: 25px;
-        padding-top: 1px;
-        margin-bottom: 0px;
-    }
-    header .countdown {
-        font-size: 2.3em;
-        line-height: 50px;
-    }
-    header .countdown span {
-        line-height: 5px;
-    }
-    header .logo img {
-        width: 25%;
-        height: auto;
-    }
-    .services {
-        padding-top: 279px;
-    }
-   footer {
-        text-align: center;
-    }
-    footer .social-icon {
-        float: none;
-        display: inline-block;
-        text-align: center;
-    }
-    footer .copyright {
-        float: none;
-        text-align: center;
-    }
+	.contact input[type="submit"] {
+		width: 40%;
+	}
+	.contact .error .name {
+		left: 41.2%;
+	}
+	header p {
+		font-size: 14px;
+	}
+	header h1 {
+		font-size: 25px;
+		padding-top: 1px;
+		margin-bottom: 0px;
+	}
+	header .countdown {
+		font-size: 2.3em;
+		line-height: 50px;
+	}
+	header .countdown span {
+		line-height: 5px;
+	}
+	header .logo img {
+		width: 25%;
+		height: auto;
+	}
+	.services {
+		padding-top: 279px;
+	}
+	footer {
+		text-align: center;
+	}
+	footer .social-icon {
+		float: none;
+		display: inline-block;
+		text-align: center;
+	}
+	footer .copyright {
+		float: none;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 414px) {
-    .services {
-        padding-top: 90px;
-    }
+	.services {
+		padding-top: 90px;
+	}
 }
 @media only screen and (max-width: 320px) {
-    .services {
-        padding-top: 180px;
-    }
+	.services {
+		padding-top: 180px;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    .subscribe {
-        background-attachment: scroll!important;
-        -webkit-background-size: cover;
-        background-position: center;
-    }
+	.subscribe {
+		background-attachment: scroll!important;
+		-webkit-background-size: cover;
+		background-position: center;
+	}
+}
+
+a.whiteghost {
+	color: #ffffff !important;
+	padding: 10px 17px!important;
+	border-radius: 0px !important;
+	border-width: 1.5px !important;
+	border-color: #ffffff !important;
+	border-style: solid !important;
+	background: transparent !important;
+	font-size: 15px !important;
+	letter-spacing: 2px !important;
+	font-weight: 500 !important;
+	display: inline-block;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: .2s ease-in-out !important;
+	-moz-transition: .2s ease-in-out !important;
+	-ms-transition: .2s ease-in-out !important;
+	-o-transition: .2s ease-in-out !important;
+	transition: .2s ease-in-out !important;
+	font-family: 'Roboto', sans-serif !important;
 }
