@@ -219,7 +219,7 @@ header .mouse a {
 
 .countdown div {
 	display:inline-block;
-	margin: 0 34px;
+	margin: 34px;
 }
 
 
@@ -777,18 +777,40 @@ footer a:hover {
 		margin-left: 10px;
 	}
 	header h1 {
-		font-size: 25px;
+		font-size: 3em;
 		padding-top: 1px;
-		margin-bottom: 0px;
-		text-align: left;
+		margin-bottom: 50px;
+		text-align: center;
 	}
 	header .countdown {
 		font-size: 2.1em;
 		line-height: 50px;
 		margin-top: -20px;
+		display: block;
 	}
 	header .countdown span {
 		line-height: 5px;
+		display: inline-block;
+		width: 69px;
+		height: 70px;
+		font-size: 30px;
+		font-family: 'Roboto', sans-serif !important;
+		text-align: center;
+		margin-top: 7px;
+		font-size: 13px;
+		color: #818181;
+	}
+
+	header .countdown span.ult_countdown-amount {
+		line-height: 5px;
+		display: inline-block;
+		height: 27px;
+		font-size: 30px;
+		font-family: 'Roboto', sans-serif !important;
+		text-align: center;
+		margin-top: 7px;
+		font-size: 35px;
+		color: rgba(255,255,255,0.84);
 	}
 	header .logo img {
 		height: auto;
@@ -908,4 +930,5 @@ a.whiteghost {
 	-o-transition: .2s ease-in-out !important;
 	transition: .2s ease-in-out !important;
 	font-family: 'Roboto', sans-serif !important;
+	margin-top: 100px;
 }
