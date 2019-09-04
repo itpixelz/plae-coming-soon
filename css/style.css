@@ -790,11 +790,11 @@ footer a:hover {
 		padding: 20px;
     }
 
-	.coming-soon {
+	header .coming-soon {
 		display: block;
 		position: absolute;
 		top: calc(50% - 125px);
-
+		width: 100%;
 	}
 
     .mouse {
