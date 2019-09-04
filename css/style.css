@@ -29,10 +29,11 @@ html, body {
 	width: 100%;
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
+	background: #000;
 }
 
 .page-loader {
-	background: #fff;
+	background: #111;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -44,7 +45,7 @@ html, body {
     left: 50%;
     right: 0;
     position: absolute;
-    margin: -20px 0 0 -20px;
+    margin: -50px 0 0 -50px;
     bottom: 0;
 }
 
@@ -55,8 +56,7 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('../images/overlay.png');
-	background-color: rgba(95,96,96,0.4);
+	background-color: rgba(0,0,0,1);
 	z-index: 1;
 }
 
@@ -67,7 +67,7 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('../images/overlay.png');
+	background-image: url('../images/spinner-light.gif');
 	background-color: rgba(95,96,96,0.4);
 	z-index: 1;
 }
@@ -141,6 +141,13 @@ header p {
 	word-spacing: 1px;
 	line-height: 25px;
 	padding-bottom:10px;
+}
+
+header .coming-soon {
+	display: block;
+	position: absolute;
+	top: calc(50% - 125px);
+	width: 100%;
 }
 
 header .mouse {
@@ -789,13 +796,6 @@ footer a:hover {
         margin: 10px;
 		padding: 20px;
     }
-
-	header .coming-soon {
-		display: block;
-		position: absolute;
-		top: calc(50% - 125px);
-		width: 100%;
-	}
 
     .mouse {
         display: none!important;
