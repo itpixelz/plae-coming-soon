@@ -111,11 +111,59 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       return this.init();
     };
     $.countdown.defaultOptions = {
-      date: "June 7, 2087 15:03:25",
+      date: 'September 18, 2019 12:00:00',
       refresh: 1000,
       onEnd: $.noop,
       render: function(date) {
-        //return $(this.el).html("<span class=\"ult_countdown-row ult_countdown-show4\"><span class=\"ult_countdown-section\"><span class=\"ult_time-mid\"><span class=\"ult_countdown-amount ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-amount\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:50px;tablet:45px;tablet_portrait:35px;mobile_landscape:25px;mobile:20px;&quot;,&quot;line-height&quot;:&quot;&quot;}\" style=\"background: rgb(0, 0, 0); padding: 0px;\">00</span><span class=\"ult_countdown-period ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-period\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:13px;&quot;,&quot;line-height&quot;:&quot;&quot;}\">Days</span></span></span><span class=\"ult_countdown-section\"><span class=\"ult_time-mid\"><span class=\"ult_countdown-amount ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-amount\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:50px;tablet:45px;tablet_portrait:35px;mobile_landscape:25px;mobile:20px;&quot;,&quot;line-height&quot;:&quot;&quot;}\" style=\"background: rgb(0, 0, 0); padding: 0px;\">00</span><span class=\"ult_countdown-period ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-period\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:13px;&quot;,&quot;line-height&quot;:&quot;&quot;}\">Hours</span></span></span><span class=\"ult_countdown-section\"><span class=\"ult_time-mid\"><span class=\"ult_countdown-amount ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-amount\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:50px;tablet:45px;tablet_portrait:35px;mobile_landscape:25px;mobile:20px;&quot;,&quot;line-height&quot;:&quot;&quot;}\" style=\"background: rgb(0, 0, 0); padding: 0px;\">00</span><span class=\"ult_countdown-period ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-period\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:13px;&quot;,&quot;line-height&quot;:&quot;&quot;}\">Minutes</span></span></span><span class=\"ult_countdown-section\"><span class=\"ult_time-mid\"><span class=\"ult_countdown-amount ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-amount\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:50px;tablet:45px;tablet_portrait:35px;mobile_landscape:25px;mobile:20px;&quot;,&quot;line-height&quot;:&quot;&quot;}\" style=\"background: rgb(0, 0, 0); padding: 0px;\">00</span><span class=\"ult_countdown-period ult-responsive\" data-ultimate-target=\"#count-down-wrap-9317 .ult_countdown-period\" data-responsive-json-new=\"{&quot;font-size&quot;:&quot;desktop:13px;&quot;,&quot;line-height&quot;:&quot;&quot;}\">Seconds</span></span></span></span>" + date.days + " days, " + (this.leadingZeros(date.hours)) + " hours, " + (this.leadingZeros(date.min)) + " min and " + (this.leadingZeros(date.sec)) + " sec");
+        // return $(this.el).html(date.days + " days, " + (this.leadingZeros(date.hours)) + " hours, " + (this.leadingZeros(date.min)) + " min and " + (this.leadingZeros(date.sec)) + " sec");
+        return $(this.el).html("<div id=\"countdown-plae\" class=\"countdowns\">\n" +
+            "                <span class=\"ult_countdown-section\">\n" +
+            "                    <span class=\"ult_time-mid\">\n" +
+            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
+            "                            00\n" +
+            "                        </span>\n" +
+            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
+            "                            Days\n" +
+            "                        </span>\n" +
+            "                    </span>\n" +
+            "                </span>\n" +
+            "\n" +
+            "                <span class=\"ult_countdown-section\">\n" +
+            "                    <span class=\"ult_time-mid\">\n" +
+            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
+            "                            00\n" +
+            "                        </span>\n" +
+            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
+            "                            Hours\n" +
+            "                        </span>\n" +
+            "                    </span>\n" +
+            "                </span>\n" +
+            "\n" +
+            "                <span class=\"ult_countdown-section\">\n" +
+            "                    <span class=\"ult_time-mid\">\n" +
+            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
+            "                            00\n" +
+            "                        </span>\n" +
+            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
+            "                            Minutes\n" +
+            "                        </span>\n" +
+            "                    </span>\n" +
+            "                </span>\n" +
+            "\n" +
+            "                <span class=\"ult_countdown-section\">\n" +
+            "                    <span class=\"ult_time-mid\">\n" +
+            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
+            "                            00\n" +
+            "                        </span>\n" +
+            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
+            "                            Seconds\n" +
+            "                        </span>\n" +
+            "                    </span>\n" +
+            "                </span>\n" +
+            "                \n" +
+            "                </span>\n" +
+            "            </div>");
+
       }
     };
     $.fn.countdown = function(options) {

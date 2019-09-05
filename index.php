@@ -60,52 +60,7 @@
 
         <!-- COUNTDOWN -->
         <div class="countdown">
-            <div id="countdown-plae" class="countdowns">
-                <span class="ult_countdown-section">
-                    <span class="ult_time-mid">
-                        <span class="ult_countdown-amount ult-responsive">
-                            00
-                        </span>
-                        <span class="ult_countdown-period ult-responsive">
-                            Days
-                        </span>
-                    </span>
-                </span>
 
-                <span class="ult_countdown-section">
-                    <span class="ult_time-mid">
-                        <span class="ult_countdown-amount ult-responsive">
-                            00
-                        </span>
-                        <span class="ult_countdown-period ult-responsive">
-                            Hours
-                        </span>
-                    </span>
-                </span>
-
-                <span class="ult_countdown-section">
-                    <span class="ult_time-mid">
-                        <span class="ult_countdown-amount ult-responsive">
-                            00
-                        </span>
-                        <span class="ult_countdown-period ult-responsive">
-                            Minutes
-                        </span>
-                    </span>
-                </span>
-
-                <span class="ult_countdown-section">
-                    <span class="ult_time-mid">
-                        <span class="ult_countdown-amount ult-responsive">
-                            00
-                        </span>
-                        <span class="ult_countdown-period ult-responsive">
-                            Seconds
-                        </span>
-                    </span>
-                </span>
-                </span>
-            </div>
         </div>
         <!-- /COUNTDOWN -->
 
