@@ -11,16 +11,15 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
 @version: 1.0.1
 */
 
-
 (function() {
 
   (function($) {
     $.countdown = function(el, options) {
       var getDateData,
-        _this = this;
+          _this = this;
       this.el = el;
       this.$el = $(el);
-      this.$el.data("countdown", this);
+      this.$el.data('countdown', this);
       this.init = function() {
         _this.options = $.extend({}, $.countdown.defaultOptions, options);
         if (_this.options.refresh) {
@@ -33,8 +32,14 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       };
       getDateData = function(endDate) {
         var dateData, diff;
-        endDate = Date.parse($.isPlainObject(_this.options.date) ? _this.options.date : new Date(_this.options.date));
-        diff = (endDate - Date.parse(new Date)) / 1000;
+        var endDate = Date.parse(
+            $.isPlainObject(_this.options.date) ? _this.options.date : new Date(
+                _this.options.date));
+        console.log(_this.options.hours);
+        dateNowFixed = new Date;
+        dateNowFixed.setHours(dateNowFixed.getHours() + _this.options.hours/60);
+
+        diff = (endDate - Date.parse(dateNowFixed)) / 1000;
         if (diff <= 0) {
           diff = 0;
           if (_this.interval) {
@@ -48,7 +53,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
           hours: 0,
           min: 0,
           sec: 0,
-          millisec: 0
+          millisec: 0,
         };
         if (diff >= (365.25 * 86400)) {
           dateData.years = Math.floor(diff / (365.25 * 86400));
@@ -69,13 +74,14 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
         dateData.sec = diff;
         return dateData;
       };
+
       this.leadingZeros = function(num, length) {
         if (length == null) {
           length = 2;
         }
         num = String(num);
         while (num.length < length) {
-          num = "0" + num;
+          num = '0' + num;
         }
         return num;
       };
@@ -114,57 +120,66 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       date: 'September 18, 2019 12:00:00',
       refresh: 1000,
       onEnd: $.noop,
+      hours: 0,
       render: function(date) {
-        // return $(this.el).html(date.days + " days, " + (this.leadingZeros(date.hours)) + " hours, " + (this.leadingZeros(date.min)) + " min and " + (this.leadingZeros(date.sec)) + " sec");
-        return $(this.el).html("<div id=\"countdown-plae\" class=\"countdowns\">\n" +
-            "                <span class=\"ult_countdown-section\">\n" +
-            "                    <span class=\"ult_time-mid\">\n" +
-            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
-            "                            00\n" +
-            "                        </span>\n" +
-            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
-            "                            Days\n" +
-            "                        </span>\n" +
-            "                    </span>\n" +
-            "                </span>\n" +
-            "\n" +
-            "                <span class=\"ult_countdown-section\">\n" +
-            "                    <span class=\"ult_time-mid\">\n" +
-            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
-            "                            00\n" +
-            "                        </span>\n" +
-            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
-            "                            Hours\n" +
-            "                        </span>\n" +
-            "                    </span>\n" +
-            "                </span>\n" +
-            "\n" +
-            "                <span class=\"ult_countdown-section\">\n" +
-            "                    <span class=\"ult_time-mid\">\n" +
-            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
-            "                            00\n" +
-            "                        </span>\n" +
-            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
-            "                            Minutes\n" +
-            "                        </span>\n" +
-            "                    </span>\n" +
-            "                </span>\n" +
-            "\n" +
-            "                <span class=\"ult_countdown-section\">\n" +
-            "                    <span class=\"ult_time-mid\">\n" +
-            "                        <span class=\"ult_countdown-amount ult-responsive\">\n" +
-            "                            00\n" +
-            "                        </span>\n" +
-            "                        <span class=\"ult_countdown-period ult-responsive\">\n" +
-            "                            Seconds\n" +
-            "                        </span>\n" +
-            "                    </span>\n" +
-            "                </span>\n" +
-            "                \n" +
-            "                </span>\n" +
-            "            </div>");
+        /*return $(this.el).html(date.days + ' days, ' +
+            (this.leadingZeros(date.hours)) + ' hours, ' +
+            (this.leadingZeros(date.min)) + ' min and ' +
+            (this.leadingZeros(date.sec)) + ' sec');*/
+        return $(this.el).
+            html('<div id="countdown-plae" class="countdowns">\n' +
+                '                <span class="ult_countdown-section">\n' +
+                '                    <span class="ult_time-mid">\n' +
+                '                        <span class="ult_countdown-amount ult-responsive">\n' +
+                '                            ' + date.days +
+                '\n' +
+                '                        </span>\n' +
+                '                        <span class="ult_countdown-period ult-responsive">\n' +
+                '                            Days\n' +
+                '                        </span>\n' +
+                '                    </span>\n' +
+                '                </span>\n' +
+                '\n' +
+                '                <span class="ult_countdown-section">\n' +
+                '                    <span class="ult_time-mid">\n' +
+                '                        <span class="ult_countdown-amount ult-responsive">\n' +
+                '                               ' + date.hours +
+                '\n' +
+                '                        </span>\n' +
+                '                        <span class="ult_countdown-period ult-responsive">\n' +
+                '                            Hours\n' +
+                '                        </span>\n' +
+                '                    </span>\n' +
+                '                </span>\n' +
+                '\n' +
+                '                <span class="ult_countdown-section">\n' +
+                '                    <span class="ult_time-mid">\n' +
+                '                        <span class="ult_countdown-amount ult-responsive">\n' +
+                '                            ' + date.min +
+                '\n' +
+                '                        </span>\n' +
+                '                        <span class="ult_countdown-period ult-responsive">\n' +
+                '                            Minutes\n' +
+                '                        </span>\n' +
+                '                    </span>\n' +
+                '                </span>\n' +
+                '\n' +
+                '                <span class="ult_countdown-section">\n' +
+                '                    <span class="ult_time-mid">\n' +
+                '                        <span class="ult_countdown-amount ult-responsive">\n' +
+                '                           ' + date.sec +
+                '\n' +
+                '                        </span>\n' +
+                '                        <span class="ult_countdown-period ult-responsive">\n' +
+                '                            Seconds\n' +
+                '                        </span>\n' +
+                '                    </span>\n' +
+                '                </span>\n' +
+                '                \n' +
+                '                </span>\n' +
+                '            </div>');
 
-      }
+      },
     };
     $.fn.countdown = function(options) {
       return $.each(this, function(i, el) {

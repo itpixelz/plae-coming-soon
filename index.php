@@ -57,7 +57,13 @@
     <div class="coming-soon animated">
 
         <h1>Always Evolving.</h1>
-
+        <?php
+        //echo date_default_timezone_get();
+        ?>
+        <script>
+          var timezone_offset_minutes = new Date().getTimezoneOffset();
+          timezone_offset_minutes = timezone_offset_minutes == 0 ? 0 : -timezone_offset_minutes;
+        </script>
         <!-- COUNTDOWN -->
         <div class="countdown">
 
