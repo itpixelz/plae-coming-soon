@@ -102,6 +102,12 @@
                         <input type="submit" name="submit" id="submit"
                                value="Send message"
                                data-sr="wait 0.8s, then enter top and move 40px after 0.3s"/>
+
+                        <script>
+                          grecaptcha.ready(function() {
+                            grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'});
+                          });
+                        </script>
                     </form>
                 </div>
             </div>
@@ -123,6 +129,7 @@
 <!-- Ajax chimp -->
 <script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.ajaxchimp.js"></script>
 <script src="<?php bloginfo('stylesheet_directory');?>/js/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfs5rYUAAAAAGjl4MwMdZBLpfU4SG2MpTybceIs"></script>
 </body>
 
 </html>
