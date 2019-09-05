@@ -968,11 +968,12 @@ footer a:hover {
 
 
 .blackghost {
-    color: #ffffff !important;
+    align-self: center;
+    color: #000 !important;
     padding: 10px 17px !important;
-    border-radius: 0px !important;
+    border-radius: px !important;
     border-width: 1.5px !important;
-    border-color: #ffffff !important;
+    border-color: #000 !important;
     border-style: solid !important;
     background: transparent !important;
     font-size: 15px !important;
@@ -989,17 +990,18 @@ footer a:hover {
     -o-transition: .2s ease-in-out !important;
     transition: .2s ease-in-out !important;
     font-family: 'Roboto', sans-serif !important;
-    margin-top: 100px;
+    margin: 20px auto;
+    text-transform: uppercase;
 }
 
 .blackghost:hover {
-    color: #000000 !important;
+    color: #ffffff !important;
     padding: 10px 17px !important;
     border-radius: 0 !important;
     border-width: 1.5px !important;
     border-color: #ffffff !important;
     border-style: solid !important;
-    background: #ffffff !important;
+    background: #000000 !important;
     font-size: 15px !important;
     letter-spacing: 2px !important;
     font-weight: 500 !important;
