@@ -30,7 +30,7 @@
     <!-- Bootstrap v3.3.1 -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/css/bootstrap.min.css">
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>images/favicon.ico.png">
+    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>/images/favicon.ico.png">
 
 </head>
 
@@ -39,7 +39,7 @@
 <!--= LOADER TEMPLATE -->
 <div class="page-loader">
     <div class="loader-icon"><img style="width: 100px; height: 100px"
-                                  src="images/spinner.svg" alt=""></div>
+                                  src="<?php bloginfo('stylesheet_directory');?>/images/spinner.svg" alt=""></div>
 </div>
 <!-- /LOADER TEMPLATE -->
 
@@ -51,7 +51,7 @@
     <!--<div id="video" data-video="cphYpNus4oQ" data-mute="true"></div>-->
     <!-- /YOUTUBE PLAYER -->
 
-    <div class="logo"><img src="images/logo.svg" width="190" height="190"
+    <div class="logo"><img src="<?php bloginfo('stylesheet_directory');?>/images/logo.svg" width="190" height="190"
                            alt=""></div>
 
     <div class="coming-soon animated">
