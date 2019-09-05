@@ -22,15 +22,20 @@
 
     <!-- CSS -->
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/css/animate.css">
+    <link rel="stylesheet" type="text/css"
+          href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/animate.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet"
+          href="<?php bloginfo( 'stylesheet_directory' ); ?>/font-awesome/css/font-awesome.min.css"/>
     <!-- Custom styles CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/css/style.css">
+    <link rel="stylesheet" type="text/css"
+          href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/style.css">
     <!-- Bootstrap v3.3.1 -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.min.css">
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>/images/favicon.ico.png">
+    <link rel="shortcut icon"
+          href="<?php bloginfo( 'stylesheet_directory' ); ?>/images/favicon.ico.png">
 
 </head>
 
@@ -39,7 +44,8 @@
 <!--= LOADER TEMPLATE -->
 <div class="page-loader">
     <div class="loader-icon"><img style="width: 100px; height: 100px"
-                                  src="<?php bloginfo('stylesheet_directory');?>/images/spinner.svg" alt=""></div>
+                                  src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/spinner.svg"
+                                  alt=""></div>
 </div>
 <!-- /LOADER TEMPLATE -->
 
@@ -51,18 +57,22 @@
     <!--<div id="video" data-video="cphYpNus4oQ" data-mute="true"></div>-->
     <!-- /YOUTUBE PLAYER -->
 
-    <div class="logo"><img src="<?php bloginfo('stylesheet_directory');?>/images/logo.svg" width="190" height="190"
-                           alt=""></div>
+    <div class="logo"><img
+                src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo.svg"
+                width="190" height="190"
+                alt=""></div>
 
     <div class="coming-soon animated">
 
         <h1>Always Evolving.</h1>
-        <?php
-        //echo date_default_timezone_get();
-        ?>
+		<?php
+		//echo date_default_timezone_get();
+		?>
         <script>
           var timezone_offset_minutes = new Date().getTimezoneOffset();
-          timezone_offset_minutes = timezone_offset_minutes == 0 ? 0 : -timezone_offset_minutes;
+          timezone_offset_minutes = timezone_offset_minutes == 0
+              ? 0
+              : -timezone_offset_minutes;
         </script>
         <!-- COUNTDOWN -->
         <div class="countdown">
@@ -94,18 +104,30 @@
                         <input type="text" name="name" id="name"
                                placeholder="Name" value=""
                                data-sr="enter left move 25px, after 0.3s"/>
+
                         <input type="email" name="email" id="email"
                                placeholder="Email" value=""
                                data-sr="enter right move 25px, after 0.3s"/>
+
+                        <input type="text" name="subject" id="subject"
+                               placeholder="Subject" value=""
+                               data-sr="enter left move 25px, after 0.3s"/>
+
+                        <input type="phone" name="phone" id="phone"
+                               placeholder="Phone" value=""
+                               data-sr="enter right move 25px, after 0.3s"/>
+
                         <textarea name="msg" id="msg" placeholder="Message"
                                   data-sr="enter bottom move 25px, after 0.3s"></textarea>
-                        <input type="submit" name="submit" id="submit"
-                               value="Send message"
-                               data-sr="wait 0.8s, then enter top and move 40px after 0.3s"/>
+
+
+                        <button class="blackghost" type="submit" name="submit" id="submit"
+                               >Send Message</button>
 
                         <script>
                           grecaptcha.ready(function() {
-                            grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'});
+                            grecaptcha.execute('reCAPTCHA_site_key',
+                                {action: 'homepage'});
                           });
                         </script>
                     </form>
@@ -120,15 +142,15 @@
 
 <!-- Javascript files -->
 <!-- jQuery -->
-<script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.js"></script>
 
 <!-- CountDown  -->
-<script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.countdown.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.countdown.js"></script>
 <!-- Validate form -->
-<script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.validate.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.validate.js"></script>
 <!-- Ajax chimp -->
-<script src="<?php bloginfo('stylesheet_directory');?>/js/jquery.ajaxchimp.js"></script>
-<script src="<?php bloginfo('stylesheet_directory');?>/js/main.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.ajaxchimp.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?render=6Lfs5rYUAAAAAGjl4MwMdZBLpfU4SG2MpTybceIs"></script>
 </body>
 

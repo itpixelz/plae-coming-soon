@@ -173,7 +173,7 @@ header .mouse a {
     height: 36px;
     border-radius: 10px;
     display: inline-block;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
 
 }
 
@@ -438,8 +438,8 @@ header .countdown span.ult_countdown-amount {
 }
 
 
-.contact input[type='text'], .contact input[type='email'] {
-    width: 44%;
+.contact input {
+    width: 48%;
     background: transparent;
     border-bottom: 2px solid #ddd;
     border-top: none;
@@ -453,11 +453,6 @@ header .countdown span.ult_countdown-amount {
     transition: all 0.3s !important;
 }
 
-.contact input[type='email'] {
-    right: 15px;
-    position: absolute;
-    top: 0px;
-}
 
 .contact input[type='text'], .contact input[type='email']:focus {
     border-bottom: 2px solid #bbb;
@@ -466,12 +461,9 @@ header .countdown span.ult_countdown-amount {
     border-right: none;
 }
 
-.contact input[type='text'] {
-    width: 45.1%;
-}
 
 .contact textarea {
-    width: 100%;
+    width: 97%;
     background: transparent;
     padding-top: 15px;
     font-size: 13px;
@@ -484,6 +476,7 @@ header .countdown span.ult_countdown-amount {
     -webkit-transition: all 0.3s !important;
     -moz-transition: all 0.3s !important;
     transition: all 0.3s !important;
+    height: 100px;
 }
 
 .contact textarea:focus {
@@ -493,31 +486,6 @@ header .countdown span.ult_countdown-amount {
     border-right: none;
 }
 
-.contact input[type='submit'] {
-    background-color: rgba(22, 182, 234, 0);
-    border: 2px solid #16b6ea;
-    color: #737373;
-    width: 12%;
-    display: block;
-    margin: 0 auto;
-    word-spacing: 1px;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin-top: 20px;
-    font-weight: 700;
-    height: 54px;
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
-    transition: all 0.3s ease-in-out !important;
-}
-
-.contact input[type="submit"]:hover {
-    background: #16b6ea;
-    color: #fff;
-}
 
 .contact .error .email {
     text-align: right;
@@ -799,7 +767,7 @@ footer a:hover {
 
     header h1 {
         font-size: 3em;
-        padding-top: 1px;
+        padding-top: 13px;
         margin-bottom: 50px;
         text-align: center;
     }
@@ -996,5 +964,55 @@ footer a:hover {
     -o-transition: .2s ease-in-out !important;
     transition: .2s ease-in-out !important;
     font-family: 'Roboto', sans-serif !important;
+}
+
+
+.blackghost {
+    color: #ffffff !important;
+    padding: 10px 17px !important;
+    border-radius: 0px !important;
+    border-width: 1.5px !important;
+    border-color: #ffffff !important;
+    border-style: solid !important;
+    background: transparent !important;
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    display: inline-block;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: .2s ease-in-out !important;
+    -moz-transition: .2s ease-in-out !important;
+    -ms-transition: .2s ease-in-out !important;
+    -o-transition: .2s ease-in-out !important;
+    transition: .2s ease-in-out !important;
+    font-family: 'Roboto', sans-serif !important;
     margin-top: 100px;
 }
+
+.blackghost:hover {
+    color: #000000 !important;
+    padding: 10px 17px !important;
+    border-radius: 0 !important;
+    border-width: 1.5px !important;
+    border-color: #ffffff !important;
+    border-style: solid !important;
+    background: #ffffff !important;
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    display: inline-block;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: .2s ease-in-out !important;
+    -moz-transition: .2s ease-in-out !important;
+    -ms-transition: .2s ease-in-out !important;
+    -o-transition: .2s ease-in-out !important;
+    transition: .2s ease-in-out !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
