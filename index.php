@@ -86,7 +86,6 @@
 
     </div>
 
-
 </header>
 <!-- END HEADER -->
 
@@ -100,7 +99,10 @@
             <div class="col-md-12">
                 <div id="note"></div>
                 <div id="fields">
-                    <form id="ajax-contact-form">
+                    <form id="ajax-contact-form"
+                          action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>"
+                          method="POST">
+
                         <input type="text" name="name" id="name"
                                placeholder="Name" value=""
                                data-sr="enter left move 25px, after 0.3s"/>
@@ -121,8 +123,10 @@
                                   data-sr="enter bottom move 25px, after 0.3s"></textarea>
 
 
-                        <button class="blackghost" type="submit" name="submit" id="submit"
-                               >Send Message</button>
+                        <button class="blackghost" type="submit" name="submit"
+                                id="submit"
+                        >Send Message
+                        </button>
 
                         <script>
                           grecaptcha.ready(function() {
