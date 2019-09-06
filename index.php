@@ -169,7 +169,7 @@ if ( ! is_front_page() ) {
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.validate.js"></script>
 <!-- Ajax chimp -->
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.ajaxchimp.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6Lfs5rYUAAAAAGjl4MwMdZBLpfU4SG2MpTybceIs"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeA77YUAAAAAGdo6Ca_DnWLI9dSjGkqGnvyN_VQ"></script>
 <?php wp_footer(); ?>
 </body>
 

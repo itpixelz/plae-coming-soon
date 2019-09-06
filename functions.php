@@ -52,7 +52,9 @@ function my_resource() {
 // add_action( 'wp_enqueue_scripts', 'my_resource' );
 
 function sendmail() {
-	wp_send_json_error( 'hey' );
+	header( 'Content-Type: application/json' );
+	$response = array( 'status' => 200, 'msg' => 'asdasdasd' );
+	echo json_encode( $response);
 }
 
 add_action( 'wp_ajax_nopriv_sendmail', 'sendmail' );
