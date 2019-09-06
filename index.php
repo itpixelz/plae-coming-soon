@@ -17,7 +17,7 @@ if ( ! is_front_page() ) {
     <meta name="description" content="PLAE  - Coming Soon">
     <meta name="keywords" content="PLAE, coming soon">
     <meta name="author" content="Fahad Murtaza">
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
     <title>PLAE - Coming Soon </title>
 
     <!-- ============ GOOGLE FONTS ============ -->
@@ -139,6 +139,16 @@ if ( ! is_front_page() ) {
 
 
                     </form>
+
+                    <div class="saythanks" style="display: none">
+                    <h2>Thanks for contacting us</h2>
+
+                    <a href="#top">
+                        <button class="blackghost" id="back">
+                            Back to counter
+                        </button>
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>

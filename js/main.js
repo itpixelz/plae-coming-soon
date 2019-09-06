@@ -34,22 +34,40 @@
     });
 
     /* Disable submit button while posting */
-  //  submit.prop('disabled', true);
+    //  submit.prop('disabled', true);
 
     /* Put the results in a div */
-    posting.done(data => {
-      console.log(data);
-      console.log(JSON.parse(data));
-      let jsonData = JSON.parse(data);
-      if (jsonData.success) {
-        // Show the button
+    posting.done(function(data, statusText, xhr) {
+      var status = xhr.status;                //200
+      var head = xhr.getAllResponseHeaders(); //Detail header info
+
+      /*  console.log(data);
+        console.log(JSON.parse(data));
+        let jsonData = JSON.parse(data);
+
+
+        if (jsonData.success) {
+          // Show the button
+          $form.hide();
+          $('.saythanks').show();
+        }
+        else {
+          console.log('there was an error');
+          // Show user an error
+          // Log to google analytics etc
+  //        submit.prop('disabled', false);
+        }*/
+
+      if (status === 200) {
+        $form.hide();
+        $('.saythanks').show();
       }
       else {
-        console.log('there was an error');
         // Show user an error
         // Log to google analytics etc
-//        submit.prop('disabled', false);
+        submit.prop('disabled', false);
       }
+
     });
 
   });

@@ -49,7 +49,8 @@ function my_resource() {
 		[ 'ajax_url' => admin_url( 'admin-ajax.php' ) ] );
 }
 
-add_action( 'wp_enqueue_scripts', 'my_resource' );
+// add_action( 'wp_enqueue_scripts', 'my_resource' );
+
 function sendmail() {
 	wp_send_json_error( 'hey' );
 }
