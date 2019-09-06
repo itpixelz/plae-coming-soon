@@ -1,3 +1,9 @@
+<?php
+if ( ! is_front_page() ) {
+	wp_redirect( home_url() );
+	exit;
+}
+?>
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -103,23 +109,27 @@
                           action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>"
                           method="POST">
 
-                        <input type="text" name="name" id="name"
+                        <input required="required" type="text" name="name"
+                               id="name"
                                placeholder="Name" value=""
                                data-sr="enter left move 25px, after 0.3s"/>
 
-                        <input type="email" name="email" id="email"
+                        <input required="required" type="email" name="email"
+                               id="email"
                                placeholder="Email" value=""
                                data-sr="enter right move 25px, after 0.3s"/>
 
-                        <input type="text" name="subject" id="subject"
+                        <input required="required" type="text" name="subject"
+                               id="subject"
                                placeholder="Subject" value=""
                                data-sr="enter left move 25px, after 0.3s"/>
 
-                        <input type="phone" name="phone" id="phone"
+                        <input required="required" type="phone" name="phone"
+                               id="phone"
                                placeholder="Phone" value=""
                                data-sr="enter right move 25px, after 0.3s"/>
 
-                        <textarea name="msg" id="msg" placeholder="Message"
+                        <textarea required="required" name="msg" id="msg" placeholder="Message"
                                   data-sr="enter bottom move 25px, after 0.3s"></textarea>
 
 
