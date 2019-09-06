@@ -17,7 +17,7 @@ if ( ! is_front_page() ) {
     <meta name="description" content="PLAE  - Coming Soon">
     <meta name="keywords" content="PLAE, coming soon">
     <meta name="author" content="Fahad Murtaza">
-
+    <?php wp_head(); ?>
     <title>PLAE - Coming Soon </title>
 
     <!-- ============ GOOGLE FONTS ============ -->
@@ -42,7 +42,6 @@ if ( ! is_front_page() ) {
     <!-- Favicons -->
     <link rel="shortcut icon"
           href="<?php bloginfo( 'stylesheet_directory' ); ?>/images/favicon.ico.png">
-
 </head>
 
 <body style="background: #000">
@@ -129,21 +128,16 @@ if ( ! is_front_page() ) {
                                placeholder="Phone" value=""
                                data-sr="enter right move 25px, after 0.3s"/>
 
-                        <textarea required="required" name="msg" id="msg" placeholder="Message"
+                        <textarea required="required" name="msg" id="msg"
+                                  placeholder="Message"
                                   data-sr="enter bottom move 25px, after 0.3s"></textarea>
 
-
                         <button class="blackghost" type="submit" name="submit"
-                                id="submit"
-                        >Send Message
+                                id="submit">
+                            Send Message
                         </button>
 
-                        <script>
-                          grecaptcha.ready(function() {
-                            grecaptcha.execute('reCAPTCHA_site_key',
-                                {action: 'homepage'});
-                          });
-                        </script>
+
                     </form>
                 </div>
             </div>
@@ -157,6 +151,7 @@ if ( ! is_front_page() ) {
 <!-- Javascript files -->
 <!-- jQuery -->
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/main.js"></script>
 
 <!-- CountDown  -->
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.countdown.js"></script>
@@ -164,8 +159,8 @@ if ( ! is_front_page() ) {
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.validate.js"></script>
 <!-- Ajax chimp -->
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.ajaxchimp.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?render=6Lfs5rYUAAAAAGjl4MwMdZBLpfU4SG2MpTybceIs"></script>
+<?php wp_footer(); ?>
 </body>
 
 </html>
